@@ -113,10 +113,7 @@ body{
 .category:last-child{
    margin-right: 0;
 }
-.category:hover{
-   color: #fff;
-   background-color: #282828;
-}
+
 .category:active{
    transform: translateY(2px);
 }
@@ -471,7 +468,7 @@ body{
    font-weight: 700;
    padding: 2px 5px 1px 6px;
    border: 2px solid #FE5F1E;
-   border-radius: 30px;
+   border-radius: 50%;
    color:#FE5F1E;
    background-color: #fff;
    cursor: pointer;
@@ -486,11 +483,6 @@ body{
 .cart-pizza__minus-btn:active,
 .cart-pizza__plus-btn:active{
    transform: translateY(2px);
-}
-.cart-pizza__minus-btn:hover,
-.cart-pizza__plus-btn:hover{
-   color:#fff;
-   background-color: #FE5F1E;
 }
 .cart-pizza__count{
    font-family: ProximaNova-Bold;
@@ -514,7 +506,7 @@ body{
    font-weight: 700;
    padding: 2px 6.2px 1px 6px;
    border: 2px solid #D7D7D7;
-   border-radius: 30px;
+   border-radius: 50%;
    color:#D7D7D7;
    background-color: #fff;
    cursor: pointer;
@@ -625,6 +617,13 @@ body{
    .sort-container{
       margin-top: 15px;
    }
+   .container{
+      border-radius: 0;
+   }
+   body{
+      background-color: #fff;
+      padding: 0;
+   }
 }
 @media(max-width: 680px){
    .pizza{
@@ -656,9 +655,7 @@ body{
    }
 }
 @media(max-width: 580px){
-   .container{
-      padding: 30px 10px;
-   }
+   
    .header{
       padding-bottom: 25px;
    }
@@ -673,7 +670,8 @@ body{
    .header-btn{
       display: block;
       width: 65px;
-      height: 62px
+      height: 62px;
+      border-radius: 50%;
    }
    .header-btn-item-2{
    width: 100%;
@@ -709,7 +707,8 @@ body{
       margin-top: 25px;
    }
    .cart-title__text{
-      font-size: 25px;
+      font-size: 20px;
+      margin-top: 4px;
    }
    .cart-delete__text{
       font-size: 14px;
@@ -731,6 +730,17 @@ body{
    }
 }
 
+@media(hover: hover) and (pointer: fine){
+   .category:hover{
+      color: #fff;
+      background-color: #282828;
+   }
+   .cart-pizza__minus-btn:hover,
+   .cart-pizza__plus-btn:hover{
+   color:#fff;
+   background-color: #FE5F1E;
+}
+}
 /* Animation */
 
 @keyframes arrowRotateOpen {
