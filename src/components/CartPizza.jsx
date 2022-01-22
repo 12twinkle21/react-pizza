@@ -28,7 +28,7 @@ function CartPizza(props) {
          </div>
          <div className='cart-pizza__amount'>
             <button className='cart-pizza__minus-btn' onClick={deletePizza}>
-               <span>&minus;</span>
+               <span>&minus;</span>   
             </button>
             <span className='cart-pizza__count'>{props.totalCount}</span>
             <button className='cart-pizza__plus-btn' onClick={addPizza}>

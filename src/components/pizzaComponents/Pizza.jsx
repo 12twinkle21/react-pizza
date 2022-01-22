@@ -68,7 +68,7 @@ function Pizza(props) {
          <div className='price-and-btn'>
             <p className='pizza-price'>от {props.price} ₽</p>
             <button className='pizza-btn' onClick={onAddPizza}>
-               <p className='pizza-btn__1'>&#43;</p>
+               <span className='pizza-btn__1'>&#43;</span>
                <span className='pizza-btn__2'>Добавить</span>
                {props.addedCount && <span className='pizza-btn__3'>{props.addedCount}</span>}
             </button>
