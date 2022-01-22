@@ -43,11 +43,9 @@ body{
    padding: 0 10px;
    cursor: pointer;
 }
-.header-btn:hover{
-   background-color: #FF4500;
-}
 .header-btn:active{
    transform: translateY(2px);
+   background-color: #FF4500;
 }
 .header-btn-item-1{
    font-size: 16px;
@@ -113,15 +111,15 @@ body{
 .category:last-child{
    margin-right: 0;
 }
-
 .category:active{
    transform: translateY(2px);
+   color: #fff;
+   background-color: #282828;
 }
 .active-category{
    color: #fff;
    background-color: #282828; 
 }
-
 .sort-container{
    display: flex;
    margin-top: 25px;
@@ -179,7 +177,7 @@ body{
    cursor: pointer;
    user-select: none;
 }
-.popup-list li:hover{
+.popup-list li:active{
    background-color: rgb(255,247,244);
    color: #FE5F1E;
    font-family: ProximaNova-Bold;
@@ -196,12 +194,10 @@ body{
    margin-top: 50px;
    padding-left: 25px;
 }
-
 .pizzas-title{
    font-family: ProximaNova-Bold;
    font-size: 32px;
 }
-
 .pizzas{
    margin-top: 30px;
    display: flex;
@@ -290,9 +286,6 @@ body{
    cursor: pointer;
    user-select: none;
 }
-.pizza-btn:hover{
-   background-color: #EB5A1E;
-}
 .pizza-btn__1{
    margin-right: 5px; 
 }
@@ -319,6 +312,7 @@ body{
 }
 .pizza-btn:active{
    transform: translateY(2px);
+   background-color: #EB5A1E;
 }
 
 /* Cart */
@@ -355,11 +349,9 @@ body{
    user-select: none;
    cursor: pointer;
 }
-.cart-delete__text:hover{
-   color: #000;
-}
 .cart-delete__text:active{
    transform: translateY(2px);
+   color: #000;
 }
 .cart-delete__img{
    margin-right: 10px;
@@ -407,11 +399,11 @@ body{
    background-color: #FE5F1E;
    color:#fff;
 }
-.cart-btns__come-back:hover{
+.cart-btns__come-back:active{
    background-color: #000;
    color:#fff;
 }
-.cart-btns__pay-now:hover{
+.cart-btns__pay-now:active{
    background-color: #FF4500;
    border-color: #FF4500;
 }
@@ -472,6 +464,7 @@ body{
    color:#FE5F1E;
    background-color: #fff;
    cursor: pointer;
+   user-select: none;
 }
 .cart-pizza__minus-btn{
    margin-right: 10px;
@@ -483,6 +476,8 @@ body{
 .cart-pizza__minus-btn:active,
 .cart-pizza__plus-btn:active{
    transform: translateY(2px);
+   color:#fff;
+   background-color: #FE5F1E;
 }
 .cart-pizza__count{
    font-family: ProximaNova-Bold;
@@ -510,11 +505,10 @@ body{
    color:#D7D7D7;
    background-color: #fff;
    cursor: pointer;
+   user-select: none;
 }
 .cart-pizza__delete-btn:active{
    transform: translateY(2px);
-}
-.cart-pizza__delete-btn:hover{
    color: #fff;
    background-color: #000;
    border-color: #000;
@@ -562,12 +556,10 @@ body{
    background-color: #000;
    margin-top: 40px;
 }
-.empty-cart__bottom-btn:hover{
-   background-color: #8D8D8D;
-   border-color: #8D8D8D;
-}
 .empty-cart__bottom-btn:active{
    transform: translateY(2px);
+   background-color: #8D8D8D;
+   border-color: #8D8D8D;
 }
 
 /* Media */
@@ -737,10 +729,42 @@ body{
    }
    .cart-pizza__minus-btn:hover,
    .cart-pizza__plus-btn:hover{
-   color:#fff;
-   background-color: #FE5F1E;
+      color:#fff;
+      background-color: #FE5F1E;
+}
+   .cart-pizza__delete-btn:hover{
+      color: #fff;
+      background-color: #000;
+      border-color: #000;
+}
+   .header-btn:hover{
+      background-color: #FF4500;
+}
+   .popup-list li:hover{
+      background-color: rgb(255,247,244);
+      color: #FE5F1E;
+      font-family: ProximaNova-Bold;
+}
+   .pizza-btn:hover{
+      background-color: #EB5A1E;
+}
+   .cart-delete__text:hover{
+      color: #000;
+}
+   .cart-btns__come-back:hover{
+      background-color: #000;
+      color:#fff;
+}
+   .cart-btns__pay-now:hover{
+      background-color: #FF4500;
+      border-color: #FF4500;
+}
+   .empty-cart__bottom-btn:hover{
+      background-color: #8D8D8D;
+      border-color: #8D8D8D;
 }
 }
+
 /* Animation */
 
 @keyframes arrowRotateOpen {
