@@ -295,6 +295,9 @@ body{
    margin-right: 5px; 
    font-size: 30px;
    color: #EB5A1E;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
 }
 .pizza-btn__2{
    color: #EB5A1E;
@@ -303,14 +306,18 @@ body{
    margin-top: 7px;
 }
 .pizza-btn__3{
-   padding: 3px 10px 3px 8px;
+   height: 25px;
+   width: 25px;
    font-size: 13px;
    font-family: ProximaNova-Bold;
    background-color: #EB5A1E;
-   border-radius: 30px;
+   border-radius: 50%;
    color: #fff;
-   margin-left:10px;
-   margin-top: 7px;
+   margin: auto 0;
+   margin-left: 5px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
 }
 .pizza-btn:active{
    transform: translateY(2px);
@@ -488,14 +495,11 @@ body{
 }
 .cart-pizza__minus-btn span,
 .cart-pizza__plus-btn span{
-   display: block;
-   height: 9px;
-   width: 9px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
    margin: 0 auto;
-   margin-bottom: 7px;
-}
-.cart-pizza__plus-btn span{
-   margin-bottom: 8px;
+   padding-top: 2px;
 }
 .cart-pizza__minus-btn{
    margin-right: 10px;
@@ -541,11 +545,10 @@ body{
    width: 30px;
 }
 .cart-pizza__delete-btn span{
-   display: block;
-   height: 9px;
-   width: 9px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
    margin: 0 auto;
-   margin-bottom: 8px;
 }
 .cart-pizza__delete-btn:active{
    transform: translateY(2px);
@@ -729,14 +732,6 @@ body{
    .cart-pizza__delete-btn{
       height: 25px;
       width: 25px;
-   }
-   
-   .cart-pizza__plus-btn span,
-   .cart-pizza__delete-btn span{
-      margin-bottom: 13px;
-   }
-   .cart-pizza__minus-btn span{
-      margin-bottom: 12px;
    }
    .content__cart{
       margin-top: 25px;
