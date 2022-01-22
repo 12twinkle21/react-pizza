@@ -42,6 +42,7 @@ body{
    justify-content: space-between;
    padding: 0 10px;
    cursor: pointer;
+   user-select: none;
 }
 .header-btn:active{
    transform: translateY(2px);
@@ -89,6 +90,7 @@ body{
 }
 .header-logo-img{
    margin-top: 5px;
+   user-select: none;
 }
 
 /* Sort */
@@ -216,6 +218,7 @@ body{
 .pizza-img-block{
    width: 100%;
    height: auto;
+   user-select: none;
 }
 .pizza-img{
    width: 100%;
@@ -285,17 +288,19 @@ body{
    background-color: #fff;
    cursor: pointer;
    user-select: none;
+   display: flex;
+   justify-content: center;
 }
 .pizza-btn__1{
    margin-right: 5px; 
+   font-size: 30px;
+   color: #EB5A1E;
 }
 .pizza-btn__2{
    color: #EB5A1E;
    font-size: 16px;
    font-family: ProximaNova-Bold; 
-}
-.pizza-btn__2-state{
-   color:#fff;
+   margin-top: 7px;
 }
 .pizza-btn__3{
    padding: 3px 10px 3px 8px;
@@ -305,14 +310,21 @@ body{
    border-radius: 30px;
    color: #fff;
    margin-left:10px;
-}
-.pizza-btn__3-state{
-   background-color: #fff;
-   color:#EB5A1E;
+   margin-top: 7px;
 }
 .pizza-btn:active{
    transform: translateY(2px);
    background-color: #EB5A1E;
+}
+.pizza-btn:active .pizza-btn__1{
+   color:#fff;
+}
+.pizza-btn:active .pizza-btn__2{
+   color:#fff;
+}
+.pizza-btn:active .pizza-btn__3{
+   background-color: #fff;
+   color:#EB5A1E;
 }
 
 /* Cart */
@@ -389,6 +401,7 @@ body{
    font-family: ProximaNova-Bold;
    font-weight: 700;
    font-size: 16px;
+   user-select: none;
 }
 .cart-btns__come-back{
    background-color: #fff;
@@ -411,6 +424,10 @@ body{
 .cart-btns__pay-now:active{
    transform: translateY(2px);
 }
+.cart-title__img,
+.cart-delete__img{
+   user-select: none;
+}
 
 /* cartPizza */
 
@@ -429,6 +446,7 @@ body{
 }
 .cart-pizza__img-block{
    width: 30%;
+   user-select: none;
 }
 .cart-pizza__img{
    width: 100%;
@@ -442,6 +460,7 @@ body{
 .cart-pizza__amount{
    width: 25%;
    text-align: center;
+   display: flex;
 }
 .cart-pizza__name{
    font-family: ProximaNova-Bold;
@@ -458,19 +477,30 @@ body{
 .cart-pizza__plus-btn{
    font-size: 16px;
    font-weight: 700;
-   padding: 2px 5px 1px 6px;
    border: 2px solid #FE5F1E;
    border-radius: 50%;
    color:#FE5F1E;
    background-color: #fff;
    cursor: pointer;
    user-select: none;
+   height:30px;
+   width: 30px;
+}
+.cart-pizza__minus-btn span,
+.cart-pizza__plus-btn span{
+   display: block;
+   height: 9px;
+   width: 9px;
+   margin: 0 auto;
+   margin-bottom: 7px;
+}
+.cart-pizza__plus-btn span{
+   margin-bottom: 8px;
 }
 .cart-pizza__minus-btn{
    margin-right: 10px;
 }
 .cart-pizza__plus-btn{
-   padding: 2px 6px 1px 6px;
    margin-left: 10px;
 }
 .cart-pizza__minus-btn:active,
@@ -484,6 +514,7 @@ body{
    font-weight: 700;
    font-size: 22px;
    line-height: 25px;
+   margin-top: 3px;
 }
 .cart-pizza__price{
    font-family: ProximaNova-Bold;
@@ -506,6 +537,15 @@ body{
    background-color: #fff;
    cursor: pointer;
    user-select: none;
+   height:30px;
+   width: 30px;
+}
+.cart-pizza__delete-btn span{
+   display: block;
+   height: 9px;
+   width: 9px;
+   margin: 0 auto;
+   margin-bottom: 8px;
 }
 .cart-pizza__delete-btn:active{
    transform: translateY(2px);
@@ -555,6 +595,7 @@ body{
    color: #fff;
    background-color: #000;
    margin-top: 40px;
+   user-select: none;
 }
 .empty-cart__bottom-btn:active{
    transform: translateY(2px);
@@ -683,17 +724,11 @@ body{
    .cart-pizza__settings{
       font-size: 11px;
    }
-   .cart-pizza__minus-btn{
-      margin-right: 5px;
-      padding: 1px 4px 0px 5px;
-   }
-   .cart-pizza__plus-btn{
-      margin-left: 5px;
-      padding: 1px 5px 0px 5px;
-   }
+   .cart-pizza__minus-btn,
+   .cart-pizza__plus-btn,
    .cart-pizza__delete-btn{
-      padding: 2px 6.2px 0px 6px;
-      margin-bottom: 3px;
+      height: 25px;
+      width: 25px;
    }
    .content__cart{
       margin-top: 25px;
@@ -762,6 +797,16 @@ body{
    .empty-cart__bottom-btn:hover{
       background-color: #8D8D8D;
       border-color: #8D8D8D;
+}
+   .pizza-btn:hover .pizza-btn__1{
+      color:#fff;
+}
+   .pizza-btn:hover .pizza-btn__2{
+      color:#fff;
+}
+   .pizza-btn:hover .pizza-btn__3{
+      background-color: #fff;
+      color:#EB5A1E;
 }
 }
 

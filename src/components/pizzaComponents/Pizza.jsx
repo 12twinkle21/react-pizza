@@ -6,24 +6,13 @@ function Pizza(props) {
 
    let [availableType, setAvailableType] = React.useState(props.types[0]);
    let [availableSize, setAvailableSize] = React.useState(props.sizes[0]);
-   let [btnState, setBtnState] = React.useState();
-
 
    let onSelectType = (index) => { 
       setAvailableType(index);
    }
 
-
    let onSelectSize = (index) => { 
       setAvailableSize(index);
-   }
-   
-   let toggleBtnState = () => {
-      setBtnState(true);
-   }
-
-   let toggleBtnStateLeave = () => {
-      setBtnState(false);
    }
    
    let { id, name, url, price } = props;
@@ -78,10 +67,10 @@ function Pizza(props) {
          </div>
          <div className='price-and-btn'>
             <p className='pizza-price'>от {props.price} ₽</p>
-            <button className='pizza-btn' onClick={onAddPizza} onMouseEnter={toggleBtnState} onMouseLeave={toggleBtnStateLeave} onTouchStart={ toggleBtnState} onTouchEnd={toggleBtnStateLeave}>
-               <span className='pizza-btn__1'><img className='pizza-btn__1-img' src={btnState? './img/aPlusWhite.png' : './img/aPlusRed.png'} alt='plus' /></span>
-               <span className={classNames('pizza-btn__2', btnState? 'pizza-btn__2-state' : '')}>Добавить</span>
-               {props.addedCount && <span className={classNames('pizza-btn__3', btnState? 'pizza-btn__3-state' : '')}>{props.addedCount}</span>}
+            <button className='pizza-btn' onClick={onAddPizza}>
+               <p className='pizza-btn__1'>&#43;</p>
+               <span className='pizza-btn__2'>Добавить</span>
+               {props.addedCount && <span className='pizza-btn__3'>{props.addedCount}</span>}
             </button>
          </div>
          </div>
