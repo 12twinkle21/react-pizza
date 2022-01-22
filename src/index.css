@@ -730,6 +730,14 @@ body{
       height: 25px;
       width: 25px;
    }
+   
+   .cart-pizza__plus-btn span,
+   .cart-pizza__delete-btn span{
+      margin-bottom: 13px;
+   }
+   .cart-pizza__minus-btn span{
+      margin-bottom: 12px;
+   }
    .content__cart{
       margin-top: 25px;
    }
