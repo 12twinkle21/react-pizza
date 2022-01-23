@@ -298,7 +298,7 @@ body{
    flex-direction: column;
    justify-content: center;
    height: 15px;
-   margin: auto 0;
+   margin-top: 10px;
    margin-right: 5px; 
 }
 .pizza-btn__2{
@@ -676,6 +676,7 @@ body{
    .content__cart{
       padding: 0 5px;
       margin-top: 40px;
+      padding-bottom: 50px;
    }
    .pizzas-block{
       padding-left: 0;
@@ -753,7 +754,7 @@ body{
    .cart-pizza__plus-btn span,
    .cart-pizza__delete-btn span{
       padding-top: 0;
-      padding-bottom: 8px;
+      padding-bottom: 9px;
    }
 }
 @media(max-width: 400px){
