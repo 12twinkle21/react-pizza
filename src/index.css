@@ -665,6 +665,15 @@ body{
       background-color: #fff;
       padding: 0;
    }
+   .cart-pizza__minus-btn span,
+   .cart-pizza__plus-btn span,
+   .cart-pizza__delete-btn span{
+      padding-top: 0;
+      padding-bottom: 5px;
+   }
+   .pizza-btn__1{
+      margin-top: 2px;
+   }
 }
 @media(max-width: 680px){
    .pizza{
@@ -694,15 +703,6 @@ body{
    }
    .cart-pizza__settings{
       font-size: 15px;
-   }
-   .cart-pizza__minus-btn span,
-   .cart-pizza__plus-btn span,
-   .cart-pizza__delete-btn span{
-      padding-top: 0;
-      padding-bottom: 5px;
-   }
-   .pizza-btn__1{
-      margin-top: 2px;
    }
 }
 @media(max-width: 580px){
