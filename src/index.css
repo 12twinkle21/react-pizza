@@ -502,6 +502,8 @@ body{
    justify-content: center;
    margin: 0 auto;
    padding-top: 2px;
+   height:9px;
+   width: 9px;
 }
 .cart-pizza__minus-btn{
    margin-right: 10px;
@@ -550,6 +552,8 @@ body{
    flex-direction: column;
    justify-content: center;
    margin: 0 auto;
+   height:9px;
+   width: 9px;
 }
 .cart-pizza__delete-btn:active{
    transform: translateY(2px);
@@ -755,6 +759,9 @@ body{
    .cart-pizza__delete-btn span{
       padding-top: 0;
       padding-bottom: 9px;
+   }
+   .pizza-btn__1{
+      margin-top: 8px;
    }
 }
 @media(max-width: 400px){
