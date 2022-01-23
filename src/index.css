@@ -647,6 +647,15 @@ body{
       right:0;
       left: 115px;
    }
+   .cart-pizza__minus-btn span,
+   .cart-pizza__plus-btn span,
+   .cart-pizza__delete-btn span{
+      padding-top: 0;
+      padding-bottom: 5px;
+   }
+   .pizza-btn__1{
+      margin-top: 2px;
+   }
 }
 @media(max-width: 750px){
    .category-list{
@@ -664,15 +673,6 @@ body{
    body{
       background-color: #fff;
       padding: 0;
-   }
-   .cart-pizza__minus-btn span,
-   .cart-pizza__plus-btn span,
-   .cart-pizza__delete-btn span{
-      padding-top: 0;
-      padding-bottom: 5px;
-   }
-   .pizza-btn__1{
-      margin-top: 2px;
    }
 }
 @media(max-width: 680px){
