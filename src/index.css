@@ -699,10 +699,10 @@ body{
    .cart-pizza__plus-btn span,
    .cart-pizza__delete-btn span{
       padding-top: 0;
-      padding-bottom: 7px;
+      padding-bottom: 5px;
    }
    .pizza-btn__1{
-      margin-top: 4px;
+      margin-top: 2px;
    }
 }
 @media(max-width: 580px){
@@ -766,7 +766,7 @@ body{
    .cart-pizza__minus-btn span,
    .cart-pizza__plus-btn span,
    .cart-pizza__delete-btn span{
-      padding-bottom: 4px;
+      padding-bottom: 3px;
    }
    .pizza-btn__1{
       margin-top: 8px;
