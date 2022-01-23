@@ -652,6 +652,7 @@ body{
    .cart-pizza__delete-btn span{
       padding-top: 0;
       padding-bottom: 4px;
+      padding-right: 10px;
    }
    .pizza-btn__1{
       margin-top: 8px;
